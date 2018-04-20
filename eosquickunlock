@@ -1,0 +1,10 @@
+#!/bin/bash
+#Quickstart for the unlocking the wallet
+#very insecure only use for testing purpose
+
+sleep 0.5
+password="$(cat ~/Desktop/eos/build/programs/cleos/password)"
+xdotool type "cleos wallet unlock -n samuele"
+xdotool key KP_Enter
+xdotool type "$password"
+xdotool key KP_Enter

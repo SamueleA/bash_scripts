@@ -1,0 +1,12 @@
+#!/bin/bash
+#compile and executes c++ code in one command
+
+if [ $# -ne 1 ]
+then
+	echo "USAGE: gfast filename"
+	exit 1
+fi
+
+FILENAME=$1
+
+g++ ${FILENAME} && ./a.out
